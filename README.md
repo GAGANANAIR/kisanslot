@@ -154,7 +154,7 @@ cd frontend
 npm install
 npm run dev
 ```
-- Open your browser to (kisanslot-sooty.vercel.app)
+- Public Website: https://kisanslot-sooty.vercel.app/
 
 ### 3. Run Benchmark Simulation
 ```bash
