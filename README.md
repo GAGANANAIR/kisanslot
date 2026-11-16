@@ -1,10 +1,10 @@
-# KisanSlot (किसानस्लॉट / ಕಿಸಾನ್‌ಸ್ಲಾಟ್)
+# KisanSlot 
 ### Smart Agricultural Procurement Slot Booking & Real-Time Queue Management System
 **College Major Project** | Full-Stack Web Application
 
 ---
 
-## 🌾 1. Problem Statement
+##  1. Problem Statement
 Farmers in India and across developing agrarian economies routinely face severe bottlenecks at Agricultural Produce Market Committees (APMC) and government procurement centres:
 1. **Unpredictable, Long Waiting Times:** Unregulated walk-in arrivals (First-Come-First-Served) create massive morning gridlocks where tractors and trucks wait in line for **4 to 16+ hours**, frequently forcing farmers to camp overnight on roadside highways.
 2. **Information Asymmetry:** Farmers lack transparency regarding daily procurement quotas, counter operating speeds, and inspection schedules.
@@ -16,7 +16,7 @@ Farmers in India and across developing agrarian economies routinely face severe 
 
 ---
 
-## 🏗️ 2. System Architecture
+##  2. System Architecture
 
 ```mermaid
 flowchart TD
@@ -62,7 +62,7 @@ flowchart TD
 
 ---
 
-## 💻 3. Technology Stack
+## 3. Technology Stack
 
 - **Backend:** Python 3.12, FastAPI, SQLAlchemy 2.0, Pydantic v2, SQLite (swappable to PostgreSQL via `DATABASE_URL`).
 - **Real-Time Layer:** Native WebSockets (`/ws/centres/{id}`, `/ws/farmers/{id}`, `/ws/global`) with bi-directional pub-sub event dispatching.
@@ -73,7 +73,7 @@ flowchart TD
 
 ---
 
-## 🔄 4. Booking Lifecycle State Machine
+##  4. Booking Lifecycle State Machine
 
 ```mermaid
 stateDiagram-v2
@@ -90,7 +90,7 @@ stateDiagram-v2
 
 ---
 
-## 🧠 5. Smart Slot Allocation & Wait Estimator
+##  5. Smart Slot Allocation & Wait Estimator
 
 1. **Anti-Overbooking Guarantee:**
    $$\text{Slot Booked Capacity} + \text{Requested Quantity} \le \text{Max Slot Capacity}$$
@@ -102,7 +102,7 @@ stateDiagram-v2
 
 ---
 
-## 📊 6. Simulation & Benchmark Results
+## 6. Simulation & Benchmark Results
 
 A discrete-event simulation (`simulation/simulate.py`) was run modeling **500 synthetic farmers across 3 procurement hubs over a 5-day drive**:
 
@@ -120,7 +120,7 @@ Generated charts are saved in `simulation/output/`:
 
 ---
 
-## 🔑 7. Seed Accounts & Demo Credentials
+## 7. Seed Accounts & Demo Credentials
 
 The database is pre-seeded with realistic data across 3 procurement hubs (Dharwad, Mandya, Bhopal):
 
@@ -136,7 +136,7 @@ The database is pre-seeded with realistic data across 3 procurement hubs (Dharwa
 
 ---
 
-## 🚀 8. Quick Start & Setup Guide
+##  8. Quick Start & Setup Guide
 
 ### 1. Backend Setup
 ```bash
@@ -163,7 +163,7 @@ python simulation/simulate.py
 
 ---
 
-## 🧪 9. Automated Tests
+## 9. Automated Tests
 ```bash
 cd backend
 pytest tests -v
@@ -172,7 +172,7 @@ All allocator unit tests and the end-to-end booking-to-procurement lifecycle tes
 
 ---
 
-## 📄 10. Project Directory Layout
+##  10. Project Directory Layout
 ```text
 kisanslot/
 ├── backend/
