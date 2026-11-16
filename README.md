@@ -154,7 +154,7 @@ cd frontend
 npm install
 npm run dev
 ```
-- Open your browser to [Kisan slot booking](kisanslot-sooty.vercel.app)
+- Open your browser to [Kisanslotbooking](kisanslot-sooty.vercel.app)
 
 ### 3. Run Benchmark Simulation
 ```bash
