@@ -145,7 +145,7 @@ python -m pip install -r requirements.txt
 python -m app.seed
 python -m uvicorn app.main:app --host 127.0.0.1 --port 8000 --reload
 ```
-- Interactive Swagger API Documentation: [http://localhost:8000/docs](http://localhost:8000/docs)
+- Interactive Swagger API Documentation: [backend](https://kisanslot-backend-fyn9.onrender.com/docs)
 - WebSocket Endpoint: `ws://localhost:8000/ws`
 
 ### 2. Frontend Setup
